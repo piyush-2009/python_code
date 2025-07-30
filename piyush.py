@@ -22,7 +22,7 @@ def draw_ellipse(x, y, radius_x, radius_y, color):
     pen.end_fill()
 
 # Function to draw cake layer (cylinder shape)
-def draw_cake_layer(x, y, width, height, color):
+ def draw_cake_layer(x, y, width, height, color):
     draw_ellipse(x, y + height, width // 2, 10, color)
     pen.penup()
     pen.goto(x - width // 2, y + height)
@@ -60,8 +60,8 @@ def draw_candle(x, y):
     pen.end_fill()
 
 # Draw cake layers
-draw_cake_layer(0, -150, 150, 40, "white")
-draw_cake_layer(0, -110, 120, 40, "white")
+draw_cake_layer(0, -150, 150, 40, "red")
+draw_cake_layer(0, -110, 120, 40, "pink")
 draw_cake_layer(0, -70, 90, 40, "white")
 
 # Draw candles on top
